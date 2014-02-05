@@ -4,6 +4,7 @@
 <hr>
 
 <div class="alert alert-danger" id="error_message" style="display:none;"></div>
+
 <form id="registration" name="registration" method="post" action="<?php echo base_url();?>client/clientRegistration" class="form-horizontal" role="form">
 	<div class="form-group" id="div_first_name">
 		<label for="first_name" class="col-sm-2 control-label">First Name</label>
@@ -37,13 +38,13 @@
 	<div class="form-group" id="div_last_name">
 		<label for="unit_no" class="col-sm-2 control-label">Unit No.</label>
 		<div class="col-sm-5">
-			<input type="text" class="form-control" id="unit_no" placeholder="Unit No." name="unit_no">
+			<input type="number" class="form-control" id="unit_no" placeholder="Unit No." name="unit_no">
 		</div>
 	</div>
 	<div class="form-group" id="div_building_no">
 		<label for="building_no" class="col-sm-2 control-label">Building No.</label>
 		<div class="col-sm-5">
-			<input type="text" class="form-control" id="building_no" placeholder="Building No." name="building_no">
+			<input type="number" class="form-control" id="building_no" placeholder="Building No." name="building_no">
 		</div>
 	</div>
 	<div class="form-group" id="div_street">
@@ -86,7 +87,7 @@
 	<div class="form-group" id="div_contact_no">
 		<label for="contact_no" class="col-sm-2 control-label">Contact No</label>
 		<div class="col-sm-5">
-			<input type="text" class="form-control" id="contact_no" placeholder="Contact No" name="contact_no">
+			<input type="number" class="form-control" id="contact_no" placeholder="Contact No" name="contact_no">
 		</div>
 	</div>
 	<div class="form-group" id="div_email">
