@@ -27,6 +27,11 @@ class client extends CI_Controller {
 		$this->load->view('templates/header');
 		$this->load->view('client/registration');
 	}
+	
+	public function clientRegistration(){
+		$post = $this->input->post();
+		print_r($post);
+	}
 }
 
 /* End of file welcome.php */
