@@ -21,6 +21,14 @@ class client extends CI_Controller {
 	{
 		$this->load->view('templates/header');
 		$this->load->view('client_index');
+		$this->load->view('templates/footer');
+	}
+
+	public function registration()
+	{
+		$this->load->view('templates/header');
+		//echo "content";
+		$this->load->view('templates/footer');
 	}
 }
 
