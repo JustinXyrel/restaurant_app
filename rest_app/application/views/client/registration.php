@@ -1,3 +1,6 @@
+<link href="restaurant_app\rest_app\stylesheet.css" rel="stylesheet">
+
+
 <h2>Personal Information</h2>
 <hr>
 
