@@ -5,6 +5,7 @@
 <head>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 	<script type="text/javascript" src="<?php echo base_url();?>includes/JS/jquery.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>includes/JS/jquery.form.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url();?>includes/JS/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url();?>includes/JS/functions.js"></script>
 	<script type="text/javascript" src="<?php echo base_url();?>includes/JS/jquery-ui-1.10.4.custom.min.js"></script>

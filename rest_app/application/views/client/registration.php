@@ -1,5 +1,8 @@
 <h2>Personal Information</h2>
 <hr>
+
+<div class="alert alert-danger" id="error_message" style="display:none;"></div>
+<form id="registration" name="registration" method="post" action="">
 <table>
 	<tr>	
 		<td>
@@ -135,3 +138,4 @@
 		</td>
 	</tr>
 </table>
+</form>
