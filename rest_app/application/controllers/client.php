@@ -20,15 +20,18 @@ class client extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('templates/header');
-		$this->load->view('client_index');
-		$this->load->view('templates/footer');
-	}
 
-	public function registration()
-	{
+		$this->load->view('client/index');
+	}
+	
+	public function registration(){
 		$this->load->view('templates/header');
-		//echo "content";
-		$this->load->view('templates/footer');
+		$this->load->view('client/registration');
+	}
+	
+	public function clientRegistration(){
+		$post = $this->input->post();
+		print_r($post);
 	}
 }
 
