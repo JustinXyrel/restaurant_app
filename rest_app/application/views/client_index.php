@@ -1,21 +1,16 @@
+<?php
+$this->load->helper('url');
+// $this->load->library('session');
+?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-		<script src="jquery.js"></script>
+		<script type="text/javascript" src="<?php echo base_url();?>includes/JS/jquery.js"></script>
 	</head>
 <body>
 
 <table border="1">
-	<tr>
-		<td>
-			Canvas
-		</td>
-		<td>
-			<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
-			Your browser does not support the HTML5 canvas tag.</canvas>
-		</td>
-	</tr>
 	<tr>
 		<td>
 			Geolocation
@@ -25,31 +20,9 @@
 			<article></article>
 		</td>
 	</tr>
-	
-	<tr>
-		<td>
-			Annotation
-		</td>
-		<td>
-			<canvas id="tools_sketch" width="800" height="300" style="background: url(http://www.energymagic.com.au/images/u/auspicious%20goldfish_lge.jpg) no-repeat center center; background-size:100% 100%;"></canvas>
-		</td>
 </table>
 
 <script>
-
-$(function() {
-    $('#tools_sketch').sketch({defaultColor: "#ffffff"});
-  });
-
-var c=document.getElementById("myCanvas");
-var ctx=c.getContext("2d");
-
-var grd=ctx.createLinearGradient(0,0,170,0);
-grd.addColorStop(0,"black");
-grd.addColorStop(1,"white");
-
-ctx.fillStyle=grd;
-ctx.fillRect(20,20,150,100);
 
 function success(position) {
   var mapcanvas = document.createElement('div');
