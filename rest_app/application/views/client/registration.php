@@ -71,6 +71,40 @@
 			</select>
 		</div>
 	</div>
+	<div class="form-group" id="div_dob">
+		<label for="dob" class="col-sm-2 control-label">Date of Birth</label>
+		<div class="col-sm-5">
+			<input type="text" class="form-control" id="dob" placeholder="Date of Birth" name="dob">
+		</div>
+	</div>
+	
+	<h2>Contact Information</h2>
+	<hr>
+	
+	<div class="form-group" id="div_contact_no">
+		<label for="contact_no" class="col-sm-2 control-label">Contact No</label>
+		<div class="col-sm-5">
+			<input type="text" class="form-control" id="contact_no" placeholder="Contact No" name="contact_no">
+		</div>
+	</div>
+	<div class="form-group" id="div_email">
+		<label for="email" class="col-sm-2 control-label">Email Adress</label>
+		<div class="col-sm-5">
+			<input type="email" class="form-control" id="email" placeholder="Email" name="email">
+		</div>
+	</div>
+	<div class="form-group" id="div_username">
+		<label for="username" class="col-sm-2 control-label">Username</label>
+		<div class="col-sm-5">
+			<input type="text" class="form-control" id="username" placeholder="Username" name="username">
+		</div>
+	</div>
+	<div class="form-group" id="div_password">
+		<label for="password" class="col-sm-2 control-label">Password</label>
+		<div class="col-sm-5">
+			<input type="password" class="form-control" id="password" placeholder="Password" name="password">
+		</div>
+	</div>
 	
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-5">
