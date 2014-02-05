@@ -25,10 +25,10 @@
 		<label for="gender" class="col-sm-2 control-label">Gender</label>
 		<div class="btn-group col-sm-5" data-toggle="buttons">
 		  <label class="btn btn-primary active">
-			<input type="radio" name="gender" id="gender" value="Male" checked="checked"> Male
+			<input type="radio" name="gender" id="gender" value="m" checked="checked"> Male
 		  </label>
 		  <label class="btn btn-primary">
-			<input type="radio" name="gender" id="gender" value="Female"> Female
+			<input type="radio" name="gender" id="gender" value="f"> Female
 		  </label>
 		</div>
 	</div>
@@ -47,7 +47,7 @@
 	<div class="form-group" id="div_street">
 		<label for="div_street" class="col-sm-2 control-label">Street</label>
 		<div class="col-sm-5">
-			<input type="text" class="form-control" id="div_street" placeholder="Street" name="div_street">
+			<input type="text" class="form-control" id="street" placeholder="Street" name="street">
 		</div>
 	</div>
 	<div class="form-group" id="div_city/town">
@@ -56,18 +56,18 @@
 			<input type="text" class="form-control" id="city/town" placeholder="City/Town" name="city/town">
 		</div>
 	</div>
-	<div class="form-group" id="div_state/provice">
-		<label for="city/town" class="col-sm-2 control-label">State/Provice</label>
+	<div class="form-group" id="div_state/province">
+		<label for="city/town" class="col-sm-2 control-label">State/Province</label>
 		<div class="col-sm-5">
-			<input type="text" class="form-control" id="state/provice" placeholder="State/Provice" name="state/provice">
+			<input type="text" class="form-control" id="state/province" placeholder="State/Province" name="state/province">
 		</div>
 	</div>
 	<div class="form-group" id="div_country">
 		<label for="country" class="col-sm-2 control-label">Country</label>
 		<div class="col-sm-5">
 			<select name="country" id="country" class="form-control">
-				<option value="ph">Philippines</option>
-				<option value="sg">Singapore</option>
+				<option value="1">Philippines</option>
+				<option value="2">Singapore</option>
 			</select>
 		</div>
 	</div>
