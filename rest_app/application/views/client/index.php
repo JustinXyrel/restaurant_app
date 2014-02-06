@@ -44,18 +44,29 @@ function success(position) {
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   var map = new google.maps.Map(document.getElementById("mapcontainer"), options);
-
+	
+	$.ajax({
+		url: '<?php echo base_url();?>map/getAllMapBranches',
+		success: function(response){
+			servers = $.parseJSON(response);
+			$.each(servers, function(index, value) {
+				
+				var marker2 = new google.maps.Marker({
+					position: new google.maps.LatLng(value.lat, value.lang),
+					map: map,
+					title:value.branch_desc
+					,icon: '<?php echo base_url();?>includes/IMG/map_location_40px.png'
+				  });
+			});
+		}
+	});
+	
   var marker = new google.maps.Marker({
       position: coords,
       map: map,
       title:"You are here!"
   });
-  
-  var marker2 = new google.maps.Marker({
-      position: new google.maps.LatLng(14.574084, -958.952268),
-      map: map,
-      title:"Boni Brach! wahahaha!"
-  });
+
 }
 
 function get_loc(){
