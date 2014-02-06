@@ -8,6 +8,7 @@ $('#registration').ajaxForm({
 			$("#error_message").html("First Name is required");
 			$("#div_first_name").addClass("has-error");
 			$("#error_message").show("slow");
+			$("#error_message")[0].scrollIntoView();
 			return false;
 		}
 		if($("#middle_name").val() == ""){

@@ -1,5 +1,3 @@
-
-
 <h2>Personal Information</h2>
 <hr>
 

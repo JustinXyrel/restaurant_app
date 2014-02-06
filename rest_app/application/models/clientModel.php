@@ -22,7 +22,7 @@ class clientModel extends CI_Model {
 			'state_province' => $data['state/province'],
 			'email_add' => $data['email'],
 			'username' => $data['username'],
-			'password' => $data['password'],
+			'password' => md5($data['password']),
 			'ins_date' => strtotime(date('d/m/Y H:i:s'))
 		);
 		// print_r($data);
