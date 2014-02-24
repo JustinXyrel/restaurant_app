@@ -6,7 +6,6 @@ class clientModel extends CI_Model {
 	}	
 	
     function registration($data){
-		// print_r($data);
 		$data = array(
 			'user_type_id' => '3',
 			'fname' => $data['first_name'],
@@ -25,14 +24,12 @@ class clientModel extends CI_Model {
 			'password' => md5($data['password']),
 			'ins_date' => strtotime(date('d/m/Y H:i:s'))
 		);
-		// print_r($data);
-		// die();
+
 		try {
 			return $this->db->insert('tbl_user', $data); 
 		}
 		catch (Exception $e) {
             echo $e->getMessage();
-            // return;
         }
 	}
 }

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$("#dob").datepicker();
 });
-// $('.btn-group').button();
+
 $('#registration').ajaxForm({
 	beforeSubmit: function(){
 		if($("#first_name").val() == ""){

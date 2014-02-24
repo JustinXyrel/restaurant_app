@@ -7,19 +7,19 @@
 	<div class="form-group" id="div_first_name">
 		<label for="first_name" class="col-sm-2 control-label">First Name</label>
 		<div class="col-sm-5">
-			<input type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name">
+			<input type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name" />
 		</div>
 	</div>
 	<div class="form-group" id="div_middle_name">
 		<label for="middle_name" class="col-sm-2 control-label">Middle Name</label>
 		<div class="col-sm-5">
-			<input type="text" class="form-control" id="middle_name" placeholder="Middle Name" name="middle_name">
+			<input type="text" class="form-control" id="middle_name" placeholder="Middle Name" name="middle_name" />
 		</div>
 	</div>
 	<div class="form-group" id="div_last_name">
 		<label for="last_name" class="col-sm-2 control-label">Last Name</label>
 		<div class="col-sm-5">
-			<input type="text" class="form-control" id="last_name" placeholder="Last Name" name="last_name">
+			<input type="text" class="form-control" id="last_name" placeholder="Last Name" name="last_name" />
 		</div>
 	</div>
 	<div class="form-group" id="div_gender">
@@ -81,7 +81,6 @@
 	
 	<h2>Contact Information</h2>
 	<hr>
-	
 	<div class="form-group" id="div_contact_no">
 		<label for="contact_no" class="col-sm-2 control-label">Contact No</label>
 		<div class="col-sm-5">
@@ -106,11 +105,9 @@
 			<input type="password" class="form-control" id="password" placeholder="Password" name="password">
 		</div>
 	</div>
-	
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-5">
 			<button type="submit" class="btn btn-default">Sign in</button>
 		</div>
 	</div>
-
 </form>
