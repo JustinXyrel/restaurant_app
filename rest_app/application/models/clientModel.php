@@ -35,4 +35,22 @@ class clientModel extends CI_Model {
             // return;
         }
 	}
+	
+	function login($data) {
+		$username = $data['username'];
+		$password = $data['password'];
+		
+		// print_r ($data);
+		$this->db->select('*');
+		$this->db->from('tbl_user');
+		$this->db->where('username', $username);
+		$this->db->where('`password`', sha1($password)); 
+
+		$query = $this->db->get();
+		// $this->db->count_all_results();
+		
+		foreach ($query->result(true) as $row){
+			print_r($row);
+		}
+	}
 }

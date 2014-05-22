@@ -20,6 +20,7 @@ class client extends CI_Controller {
 	function __construct() {
 		parent::__construct();
 		$this->load->model("clientModel");
+		//$this->load->model("m_login");
 	}
 	public function index()
 	{
@@ -37,6 +38,18 @@ class client extends CI_Controller {
 		$post = $this->input->post();
 		$this->clientModel->registration($post);
 	}
+
+	public function login()
+	{
+		$this->load->view('templates/header');
+		$this->load->view('client/login');
+	}
+	
+	public function clientlogin(){
+		$post = $this->input->post();
+		$this->clientModel->login($post);
+	}
+
 }
 
 /* End of file welcome.php */
